@@ -1,0 +1,25 @@
+:root {
+  --border: 1px solid black;
+  --td-size: 60px;
+}
+
+table {
+  border-collapse: collapse;
+  border: var(--border);
+}
+
+tr + tr {
+  border-top: var(--border);
+}
+
+td + td {
+  border-left: var(--border);
+}
+
+td {
+  height: var(--td-size);
+  width: var(--td-size);
+  line-height: var(--td-size);
+  text-align: center;
+  padding: .33em;
+}
