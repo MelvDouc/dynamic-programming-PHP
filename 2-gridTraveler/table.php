@@ -1,5 +1,8 @@
 <?php
 include "./gridTraveler.php";
+$m = 18;
+$n = 18;
+$grid = getGrid($m, $n);
 ?>
 
 <!DOCTYPE html>
@@ -15,11 +18,6 @@ include "./gridTraveler.php";
 
 <body>
 
-  <?php
-  $m = 18;
-  $n = 18;
-  $grid = getGrid($m, $n);
-  ?>
   <table>
     <?php for ($i = 0; $i <= $m; $i++) : ?>
       <tr>
